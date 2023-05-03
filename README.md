@@ -13,3 +13,5 @@ C++ Easyx绘制函数图像
 一个灰色的点表示1
 
 这是同学写的，但他至今没有成功登陆GitHub，所以帮他暂时储存
+
+![1](https://user-images.githubusercontent.com/111341725/235822441-d66fe53a-4050-41bb-8684-bdc37ffa30b9.PNG)
