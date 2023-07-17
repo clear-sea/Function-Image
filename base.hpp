@@ -128,18 +128,33 @@ void inverseProportionalFunc(float k) {
 	int xLast = offsetX(-halfCW), yLast = offsetY(round(k / xLast));	// 上一个点坐标
 	int x = 0, y = 0;
 	setlinecolor(GREEN);
-	for (int i = -halfCW + 1; i < 0; i++) {
-		x = offsetX(i);
-		y = offsetY(round(k/x));
-		line(xLast, yLast, x, y);	// 连点成线
-		xLast = x, yLast = y;
+	for (int i = -halfCW + 1; i <= halfCW; i++) {
+		if (i != 0) {
+			x = offsetX(i*scale);
+			y = offsetY(round(k/i*scale));
+			line(xLast, yLast, x, y);	// 连点成线
+			xLast = x, yLast = y;
+		}
 	}
-	for (int i=1; i <= halfCW; i++) {
-		x = offsetX(i);
-		y = offsetY(round(k / x));
-		line(xLast, yLast, x, y);	// 连点成线
-		xLast = x, yLast = y;
-	}
+	/*double x, y, xx, yy, xxx, yyy;
+	setlinecolor(GREEN);
+	x = -(halfCW/20);
+	y = k * 1.0 / x;
+	xxx = xx = round(x * 10 + 320);
+	yyy = yy = round(y * (-10) + 240);
+	line(xx, yy, xx, yy);
+	for (x = -31.9; x <= 32; x += 0.1)
+	{
+		if (x != 0)
+		{
+			y = k / x;
+			xx = round(x * 10 + 320);
+			yy = round(y * (-10) + 240);
+			line(xx, yy, xxx, yyy);
+			xxx = round(x * 10 + 320);
+			yyy = round(y * (-10) + 240);
+		}
+	}*/
 }
 // 二次函数
 void quadraticFunc(float a, float b, float c) {
