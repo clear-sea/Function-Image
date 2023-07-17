@@ -1,4 +1,4 @@
-English|[ÖÐÎÄ](README.md)
+English|[中文](README.md)
 
 (The following is from Bing Translation)
 
