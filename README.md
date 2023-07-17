@@ -1,11 +1,19 @@
+[English](README-en.md)|ÖÐÎÄ
 # Function-Image
-C++ Easyxç»˜åˆ¶å‡½æ•°å›¾åƒ
 
-æœ¬ç¨‹åºé€‚ç”¨äºŽäºŒæ¬¡å‡½æ•°ï¼Œä¸€æ¬¡å‡½æ•°ï¼Œåæ¯”ä¾‹å‡½æ•°çš„å›¾åƒç»˜åˆ¶
+C++½áºÏEasyx»æÖÆº¯ÊýÍ¼Ïñ
 
-ä½¿ç”¨æ—¶ä¼šå¼¹å‡ºä¸¤ä¸ªå°é»‘çª—ï¼Œ
-ä»Žå‘½ä»¤è¡Œå°é»‘çª—é‡Œè¾“å…¥ï¼Œå¯ä»¥å¤šæ¬¡è¾“å…¥
+## ¾É°æ
 
-ä¸€ä¸ªç°è‰²çš„ç‚¹è¡¨ç¤º1
+±¾³ÌÐòÊÊÓÃÓÚ¶þ´Îº¯Êý£¬Ò»´Îº¯Êý£¬·´±ÈÀýº¯ÊýµÄÍ¼Ïñ»æÖÆ
 
-![è¿è¡Œæˆªå›¾(æ—§ç‰ˆ)](https://github.com/clear-sea/Function-Image/assets/111341725/e0aad9ec-892e-4b32-a471-048e02c53abf)
+Ê¹ÓÃÊ±»áµ¯³öÁ½¸öÐ¡ºÚ´°£¬
+´ÓÃüÁîÐÐÐ¡ºÚ´°ÀïÊäÈë£¬ÊäÈëÍêËùÓÐ¶«Î÷ºóÔÙ°´ÈÎÒâÒ»¸ö¼ü¾Í¹Ø±Õ¡£
+
+È»ºóÔÙ¿´Ð¡µÄÐ¡ºÚ´°£¨ÊµÔÚÊÇÌ«²»·½±ãÁË£©
+
+Ä¿Ç°Ö»ÄÜÒ»´ÎÐÔÊ¹ÓÃ£¨¸ãÍêÁË¾Í¹ØÉÏ£©
+
+Ò»¸ö»ÒÉ«µÄµã±íÊ¾1
+
+![ÔËÐÐ½ØÍ¼(¾É°æ)](https://github.com/clear-sea/Function-Image/assets/111341725/e0aad9ec-892e-4b32-a471-048e02c53abf)
