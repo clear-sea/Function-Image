@@ -34,7 +34,7 @@ New features:
 + Clear the canvas
 + Resize the window
 + 
-! [Run screenshot (legacy)] (https://github.com/clear-sea/Function-Image/assets/111341725/e0aad9ec-892e-4b32-a471-048e02c53abf)
+![Run screenshot (legacy)](https://github.com/clear-sea/Function-Image/assets/111341725/e0aad9ec-892e-4b32-a471-048e02c53abf)
 
 (Note: The current oldMain .cpp is the source code for this version.)
 
