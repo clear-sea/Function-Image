@@ -1,8 +1,6 @@
 import ttkbootstrap as tk
 from ttkbootstrap.constants import *
 import tkinter.messagebox as msg
-from PIL import Image,ImageTk
-import time
 
 toolNavWidth=100
 canvasWidth=400
@@ -21,7 +19,18 @@ canvas.place(x=0,y=0)
 
 toolNav=tk.Frame(window,width=toolNavWidth,height=height)
 toolNav.place(x=canvasWidth,y=0)
-
+# offset
+# 传入数学坐标系中的坐标，返回画布的坐标(横坐标)
+def offsetX(x:int):
+	return (x + halfCW)
+# 传入数学坐标系中的坐标，返回画布的坐标(纵坐标)
+def offsetY(y:int):
+	if y > 0:
+		return (halfH-y)
+	elif y == 0:
+		return halfH
+	else:
+		return ((-y) + halfH)
 # init canvas
 def initCanvas():
     canvas.create_rectangle(0,0,canvasWidth,height,fill="black")
@@ -36,14 +45,15 @@ def initCanvas():
 def clearCanvas():
     canvas.delete("all")
     initCanvas()
-# 检查字符串表达式是否符合语法规范    
-def drawFunction(expression:str):
-    # 先判断是否为空
+# 检查表达式
+def drawExpression(expression:str):
+    # 先去掉所有的空格
+    expression.replace(" ","")
+    # 判断是否为空
     if len(expression)==0:
         msg.showerror("错误","表达式为空")
         return None
-    # 先去掉所有的空格
-    expression.replace(" ","")
+
     if expression[0]!="y" or expression[1]!="=":
         msg.showerror("错误","表达式错误")
         return None
@@ -52,16 +62,31 @@ def drawFunction(expression:str):
     x=y=0
     xLast=yLast=0
     canvas.create_line(x,y,x+1,y+1)
+
     # 如果没有除以x
+    local={'x':0}
     if "/x" in expression:
-        for x in range(1,canvasWidth):
-            eval(expression)
-            canvas.create_line(xLast,yLast,x,y)
-            xLast=X
+        for x in range(-halfCW,halfCW):
+            if x!=0:
+                local['x']=x
+                exec(expression,globals(),local)
+                y=local['y']
+                print(x,y)
+                canvas.create_line(offsetX(xLast),offsetY(yLast),offsetX(x),offsetY(y),fill="blue")
+                xLast=x
+                yLast=y
+    # 如果没有除以x            
+    else:
+        for x in range(-halfCW,halfCW):
+            local['x']=x
+            exec(expression,globals(),local)
+            y=local['y']
+            print(x,y)
+            canvas.create_line(offsetX(xLast),offsetY(yLast),offsetX(x),offsetY(y),fill="blue")
+            xLast=x
             yLast=y
-            
 # 输入框
-def inputFunction():
+def doFunction():
     inputBox=tk.Toplevel(window)
     inputBox.geometry("300x150")
     inputBox.title("输入")
@@ -75,32 +100,25 @@ def inputFunction():
     entry=tk.Entry(inputBox)
     entry.place(x=10,y=50,width=280,height=30)
 
-    answer=""
+    expression=""
     def getAnswer():
-        nonlocal answer
-        answer=entry.get()
-        
+        nonlocal expression
+        expression=entry.get()
+        drawExpression(expression)
         inputBox.destroy()
     def cancel():
-        nonlocal answer
-        answer=None
+        nonlocal expression
+        expression=None
         inputBox.destroy()
 
     ansButton=tk.Button(inputBox,text="确定",command=getAnswer)
     ansButton.place(x=10,y=100)
     cancelButton=tk.Button(inputBox,text="取消",command=cancel)
     cancelButton.place(x=80,y=100)
-    
-    return answer
-
-def newFunction():
-    expression=inputFunction()
-    print(expression)
-    #drawFunction(expression)
 
 initCanvas()
 
-newButton=tk.Button(toolNav,text="绘制函数",command=newFunction)
+newButton=tk.Button(toolNav,text="绘制函数",command=doFunction)
 newButton.place(x=round((toolNavWidth-buttonWidth)/2),y=10,width=buttonWidth,height=30)
 clearButton=tk.Button(toolNav,text="清空画布",command=clearCanvas)
 clearButton.place(x=round((toolNavWidth-buttonWidth)/2),y=50,width=buttonWidth,height=30)
