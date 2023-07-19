@@ -215,7 +215,7 @@ public:
 	// 按钮被点击时执行传入的函数
 	void onButtonClick() {
 		setlinecolor(BLACK);
-		setfillcolor(RGB(173, 255, 242));
+		setfillcolor(RGB(100,100,100));
 		fillrectangle(this->posX, this->posY, this->posXRight, this->posYBottom);
 		showText();
 	}
@@ -249,6 +249,7 @@ void splashScreen() {
 }
 /*初始化画布*/
 void initCanvas() {
+	BeginBatchDraw();
 	clearArea(0, 0, canvasWidth, height, BLACK);
 	// 画出参照点
 	for (int i = 0; i <= canvasWidth; i += 10) {
@@ -260,6 +261,7 @@ void initCanvas() {
 	setlinecolor(YELLOW);
 	line(0, round(height / 2), canvasWidth, round(height / 2));	// x轴
 	line(round(canvasWidth / 2), 0, round(canvasWidth / 2), height); // y轴
+	EndBatchDraw();
 }
 void initToolNav() {
 	// 绘出基础工具栏

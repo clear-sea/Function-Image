@@ -71,7 +71,6 @@ def drawExpression(expression:str):
                 local['x']=x
                 exec(expression,globals(),local)
                 y=local['y']
-                print(x,y)
                 canvas.create_line(offsetX(xLast),offsetY(yLast),offsetX(x),offsetY(y),fill="blue")
                 xLast=x
                 yLast=y
@@ -81,7 +80,6 @@ def drawExpression(expression:str):
             local['x']=x
             exec(expression,globals(),local)
             y=local['y']
-            print(x,y)
             canvas.create_line(offsetX(xLast),offsetY(yLast),offsetX(x),offsetY(y),fill="blue")
             xLast=x
             yLast=y

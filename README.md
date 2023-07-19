@@ -1,43 +1,49 @@
-[English](README-en.md)|ä¸­æ–‡
+[English](README-en.md)|ÖÐÎÄ
+
 # Function-Image
 
-C++ç»“åˆEasyxç»˜åˆ¶å‡½æ•°å›¾åƒ
+C++½áºÏEasyx»æÖÆº¯ÊýÍ¼Ïñ
 
-## 1.0[C++]
+## 1.0 [C++]
 
-(ä½œè€…:[LightByteCodes](https://github.com/LightByteCodes))
-æœ¬ç¨‹åºé€‚ç”¨äºŽäºŒæ¬¡å‡½æ•°ï¼Œä¸€æ¬¡å‡½æ•°ï¼Œåæ¯”ä¾‹å‡½æ•°çš„å›¾åƒç»˜åˆ¶
+(×÷Õß:[LightByteCodes](https://github.com/LightByteCodes))
+±¾³ÌÐòÊÊÓÃÓÚ¶þ´Îº¯Êý£¬Ò»´Îº¯Êý£¬·´±ÈÀýº¯ÊýµÄÍ¼Ïñ»æÖÆ
 
-ä½¿ç”¨æ—¶ä¼šå¼¹å‡ºä¸¤ä¸ªå°é»‘çª—ï¼Œ
-ä»Žå‘½ä»¤è¡Œå°é»‘çª—é‡Œè¾“å…¥ï¼Œè¾“å…¥å®Œæ‰€æœ‰ä¸œè¥¿åŽå†æŒ‰ä»»æ„ä¸€ä¸ªé”®å°±å…³é—­ã€‚
+Ê¹ÓÃÊ±»áµ¯³öÁ½¸öÐ¡ºÚ´°£¬
+´ÓÃüÁîÐÐÐ¡ºÚ´°ÀïÊäÈë£¬ÊäÈëÍêËùÓÐ¶«Î÷ºóÔÙ°´ÈÎÒâÒ»¸ö¼ü¾Í¹Ø±Õ¡£
 
-ç„¶åŽå†çœ‹å°çš„å°é»‘çª—ï¼ˆå®žåœ¨æ˜¯å¤ªä¸æ–¹ä¾¿äº†ï¼‰
+È»ºóÔÙ¿´Ð¡µÄÐ¡ºÚ´°£¨ÊµÔÚÊÇÌ«²»·½±ãÁË£©
 
-ç›®å‰åªèƒ½ä¸€æ¬¡æ€§ä½¿ç”¨ï¼ˆæžå®Œäº†å°±å…³ä¸Šï¼‰
+Ä¿Ç°Ö»ÄÜÒ»´ÎÐÔÊ¹ÓÃ£¨¸ãÍêÁË¾Í¹ØÉÏ£©
 
-ä¸€ä¸ªç°è‰²çš„ç‚¹è¡¨ç¤º1
+Ò»¸ö»ÒÉ«µÄµã±íÊ¾1
 
-## 2.0[C++]
+![ÔËÐÐ½ØÍ¼(¾É°æ)](https://github.com/clear-sea/Function-Image/assets/111341725/e0aad9ec-892e-4b32-a471-048e02c53abf)
 
-(ä½œè€…:[clear-sea](https://github.com/clear-sea))
+## 2.0 [C++]
 
-é€‚ç”¨äºŽäºŒæ¬¡å‡½æ•°ï¼Œä¸€æ¬¡å‡½æ•°ï¼Œåæ¯”ä¾‹å‡½æ•°çš„å›¾åƒç»˜åˆ¶ï¼Œæ ¸å¿ƒåŠŸèƒ½(ç»˜åˆ¶å‡½æ•°å›¾åƒ)çš„ä»£ç ç›´æŽ¥æ²¿ç”¨çš„ä¸Šä¸€ç‰ˆæœ¬çš„åŽŸä½œè€…çš„
+(×÷Õß:[clear-sea](https://github.com/clear-sea))
 
-æ–°çš„åŠŸèƒ½:
+ÊÊÓÃÓÚ¶þ´Îº¯Êý£¬Ò»´Îº¯Êý£¬·´±ÈÀýº¯ÊýµÄÍ¼Ïñ»æÖÆ£¬ºËÐÄ¹¦ÄÜ(»æÖÆº¯ÊýÍ¼Ïñ)µÄ´úÂëÖ±½ÓÑØÓÃµÄÉÏÒ»°æ±¾µÄÔ­×÷ÕßµÄ
 
-+ å¤šæ¬¡ç»˜åˆ¶å‡½æ•°
-+ æ¸…ç©ºç”»å¸ƒ
-+ è°ƒæ•´çª—å£å¤§å°
+ÐÂµÄ¹¦ÄÜ:
 
-(æ³¨:ç›®å‰çš„oldMain.cppå°±æ˜¯è¿™ä¸€ç‰ˆæœ¬çš„æºä»£ç )
++ ¶à´Î»æÖÆº¯Êý
++ Çå¿Õ»­²¼
++ µ÷Õû´°¿Ú´óÐ¡
 
-![è¿è¡Œæˆªå›¾(æ—§ç‰ˆ)](https://github.com/clear-sea/Function-Image/assets/111341725/e0aad9ec-892e-4b32-a471-048e02c53abf)
+(×¢:Ä¿Ç°µÄoldMain.cpp¾ÍÊÇÕâÒ»°æ±¾µÄÔ´´úÂë)
 
-## 2.1[C++]
-(ä½œè€…:[clear-sea](https://github.com/clear-sea))
+## 2.1 [C++]
 
-æœ¬æ¬¡æŠ›å¼ƒäº†å‘½ä»¤è¡Œçª—å£ï¼Œå…¨éƒ¨ç”¨EasyXçš„å›¾å½¢ç•Œé¢ä»£æ›¿ï¼Œè¾“å…¥ä½¿ç”¨EasyXçš„InputBoxå®žçŽ°ï¼Œå…¶ä»–æ–¹é¢åŠŸèƒ½ä¸Šæ”¹åŠ¨ä¸å¤§ï¼Œä¸è¿‡è¿™æ¬¡æ‰€æœ‰æ ¸å¿ƒä»£ç éƒ½æ˜¯æˆ‘è‡ªå·±å†™çš„
+(×÷Õß:[clear-sea](https://github.com/clear-sea))
 
-![è¿è¡Œæˆªå›¾(2.1)](https://github.com/clear-sea/Function-Image/assets/111341725/9cf4170c-c17c-40ea-9a97-b5d7eff0ca3c)
+±¾´ÎÅ×ÆúÁËÃüÁîÐÐ´°¿Ú£¬È«²¿ÓÃEasyXµÄÍ¼ÐÎ½çÃæ´úÌæ£¬ÊäÈëÊ¹ÓÃEasyXµÄInputBoxÊµÏÖ£¬ÆäËû·½Ãæ¹¦ÄÜÉÏ¸Ä¶¯²»´ó£¬²»¹ýÕâ´ÎËùÓÐºËÐÄ´úÂë¶¼ÊÇÎÒ×Ô¼ºÐ´µÄ
 
-å› ä¸ºæ”¹å˜ä¸å¤§ï¼Œæ‰€ä»¥ç‰ˆæœ¬å·æ”¹åŠ¨ä¹Ÿä¸å¤§
+ÒòÎª¸Ä±ä²»´ó£¬ËùÒÔ°æ±¾ºÅ¸Ä¶¯Ò²²»´ó
+
+## 2.2 [C++|Python]
+
+ÍêÉÆÁË·´±ÈÀýº¯ÊýÍ¼Ïñ»æÖÆ£¬²¢ÇÒÐ´ÁËÒ»¸öPython°æ±¾
+
+Python°æ±¾´æÔÚÒ»Ð©ÎÊÌâ£¬µ«ÊÇÊäÈëº¯Êý±í´ïÊ½¸ü¼Ó×ÔÓÉ

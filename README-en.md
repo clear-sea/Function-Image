@@ -1,4 +1,4 @@
-English|[中文](README.md)
+English|[����](README.md)
 
 (The following is from Bing Translation)
 
@@ -6,9 +6,9 @@ English|[中文](README.md)
 
 C++ combined with Easyx to draw function images
 
-## 1.0[C++]
+## 1.0 [C++]
 
-(Author: [LightByteCodes] (https://github.com/LightByteCodes))
+(Author: [LightByteCodes](https://github.com/LightByteCodes))
 This program is suitable for image drawing of quadratic functions, primary functions, inverse proportional functions
 
 Two small black windows will pop up when using,
@@ -20,9 +20,9 @@ Currently only for one-time use (close when finished)
 
 A gray dot represents 1
 
+![Run screenshot (legacy)](https://github.com/clear-sea/Function-Image/assets/111341725/e0aad9ec-892e-4b32-a471-048e02c53abf)
 
-
-## 2.0[C++]
+## 2.0 [C++]
 
 (Author: [clear-sea](https://github.com/clear-sea))
 
@@ -33,17 +33,19 @@ New features:
 + Multiple draw function
 + Clear the canvas
 + Resize the window
-+ 
-![Run screenshot (legacy)](https://github.com/clear-sea/Function-Image/assets/111341725/e0aad9ec-892e-4b32-a471-048e02c53abf)
 
 (Note: The current oldMain .cpp is the source code for this version.)
 
-## 2.1[C++]
+## 2.1 [C++]
+
 (Author: [clear-sea](https://github.com/clear-sea))
 
 This time, the command line window was abandoned, all replaced by EasyX's graphical interface, and the input was implemented using EasyX's InputBox, and other aspects of the function did not change much, but this time all the core code was written by myself
 
 Because it hasn't changed much, the version number hasn't changed much.
 
-![Runtime Screenshot(2.1)](https://github.com/clear-sea/Function-Image/assets/111341725/3eb39fb9-c6b7-4910-82c1-46e130f88089)
+## 2.2 [C++|Python]
 
+Improved inverse scale function image drawing and wrote a Python version
+
+The Python version has some problems, but the input function expression is more free
